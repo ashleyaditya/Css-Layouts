@@ -1,0 +1,19 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  resize: both;
+  overflow: auto;
+}
+
+.child {
+  /* flex:none | <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> */
+  /* if we dont want the items to stretch: */
+  flex: 0 1 200px;
+  /* if we want the items to stretch: */
+  flex: 1 1 200px;
+
+  margin: 5px;
+  background: greenyellow;
+}
